@@ -5,13 +5,16 @@
   <meta>
   <script src="jquery-1.12.4.min.js"></script>
     <!-- Latest compiled and minified CSS -->
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
 
-
+ 
   <link rel="stylesheet" href="asset/main.css">
+
 
 
   <!-- Latest compiled and minified JavaScript -->
@@ -21,6 +24,9 @@
 </head>
 
 <style>
+
+ 
+
   .headline{
     width: 80%;
     margin-left: 10%;
@@ -75,10 +81,38 @@
 
   .banner{
     position: fixed;
-    left: 2%;
-    top: 8%;
+    width: 100%;
+    background-color: #333;
     z-index: 999;
   }
+
+  .bannerlist{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+ 
+  .bannerlist li{
+    float: left;
+    display: inline-block;
+    width: 24%;
+  }
+
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: white;
+}
 /*
   @media screen and (min-width: 1200px){
     #photohead{
@@ -87,15 +121,27 @@
   }
 */
 
+  .inner{
+    height: 300px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
 </style>
 
 <body>
-  <div class="banner text-center">
-    <a href="index.html"><icon class="glyphicon glyphicon-home"><br/>Back to<br/>PeterLin</icon></a>
+  <div class="banner">
+    <ul class="bannerlist">
+      <li class="home"><a href="index.html"><icon class="glyphicon glyphicon-home">&nbsp;Back to PeterLin</icon></a></li>
+      <li><a href="#Janpan">Janpan</a></li>
+      <li><a href="#Taiwan">Taiwan</a></li>
+      <li><a href="#Europe">Europe</a></li>
+　  <ul>
   </div>
 
-　<section id="one">
-    <div style="background-color:black; width:100%">
+<section id="one">
+    <div id="headtop" style="background-color:#333; width:100%">
     <diV class="text-center container" id="headback" >
 
       <img src="image/backimgone.jpg">
@@ -112,7 +158,7 @@
             <div><img src="image/okinawa.jpg" style="width:80%"></div></a>
           </div>
           <div class="mainbutton">
-            <a href="#Eroupe"><h2>Eroupe</h2>
+            <a href="#Europe"><h2>Europe</h2>
             <div><img src="image/okinawa.jpg" style="width:80%"></div></a>
           </div>
         </div>
@@ -124,9 +170,23 @@
 
 
 
-  <section id="Janpan">
-    <div class="container">
-      <h3>This is section two<h3>
+  <section>
+    <div class="container inner">
+      <p id="Janpan"></p>
+      <h3>Janpan<h3>
+      
+    </div>
+
+  </section>
+
+
+
+  <section>
+    <div class="container inner" style="background-color:#333">
+      <p id="Taiwan"></p>
+      <h3 style="color:white">Taiwan<h3>
+      
+
 
     </div>
 
@@ -134,20 +194,10 @@
 
 
 
-  <section id="Taiwan">
-    <div class="container">
-      <h3>This is section two<h3>
-
-
-    </div>
-
-  </section>
-
-
-
-  <section id="Europe">
-    <div class="container">
-      <h3>This is section two<h3>
+  <section>
+    <div class="container inner">
+      <p id="Europe"></p>
+      <h3>Europe<h3>
 
     </div>
 
