@@ -42,6 +42,7 @@
 
   #headback{
   position: relative;
+  padding-top: 10px;
   }
   
   .insdie{
@@ -49,9 +50,18 @@
     top: 40%;   
   }
 
+@media screen and (min-width: 1200px){
   .godown{
     margin-top: 15%;
   }
+
+}
+
+@media screen and (max-width: 1199px) and (min-width: 600px) {
+  .godown{
+    margin-top: 20px;
+  }
+} 
 
   .mainbutton{
     display: inline-block;
@@ -63,6 +73,12 @@
     box-shadow: 6px 6px 3px #888888;
   }
 
+  .banner{
+    position: fixed;
+    left: 2%;
+    top: 8%;
+    z-index: 999;
+  }
 /*
   @media screen and (min-width: 1200px){
     #photohead{
@@ -74,7 +90,12 @@
 </style>
 
 <body>
+  <div class="banner text-center">
+    <a href="index.html"><icon class="glyphicon glyphicon-home"><br/>Back to<br/>PeterLin</icon></a>
+  </div>
+
 　<section id="one">
+    <div style="background-color:black; width:100%">
     <diV class="text-center container" id="headback" >
 
       <img src="image/backimgone.jpg">
@@ -97,7 +118,7 @@
         </div>
       </div>
 
-      
+    </div>  
     </div>
   </section>
 
@@ -116,7 +137,7 @@
   <section id="Taiwan">
     <div class="container">
       <h3>This is section two<h3>
-      
+
 
     </div>
 
