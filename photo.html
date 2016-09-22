@@ -21,45 +21,87 @@
 </head>
 
 <style>
-  .underline{
-    border-bottom: black solid 1px;
+  .headline{
     width: 80%;
     margin-left: 10%;
+    position: absolute;
+    top: 20%;
   }
 
-  #photohead{
-    background-image: url("image/backimgone.jpg");
-    background-size: cover;
-    padding-top: 10px;
-    width: 70%;
-    margin-left: 15%;
- 
-  } 
+  #peter{
+    background-color: rgba(250,250,250,0.6);
+    padding-top: 20px; 
+    padding-bottom: 10px;
+    border-bottom: solid black 1px;
+  }
 
+  img{
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #headback{
+  position: relative;
+  }
+  
+  .insdie{
+    position: absolute;
+    top: 40%;   
+  }
+
+  .godown{
+    margin-top: 10%;
+  }
+
+  .mainbutton{
+    display: inline-block;
+    width: 28%;
+    margin: 2%;
+    background-color: rgba(250,250,250,0.6);
+    padding-top: 10px;
+    
+    vertical-align: top;
+  }
+
+/*
   @media screen and (min-width: 1200px){
     #photohead{
       height: 200px;
-
-    }
-    
+    }   
   }
+*/
 
 </style>
 
 <body>
 　<section>
-    <diV class="text-center container" >
-      <div id="photohead">
-        <h1>Peter's Photo Diary</h1>
-        <div class="underline"></div>
+    <diV class="text-center container" id="headback" >
+
+      <img src="image/backimgone.jpg">
+
+      <div class="headline">
+        <h1 id="peter">Peter's Photo Diary</h1> 
+        <div class="godown"> 
+          <div class="mainbutton">
+            <h2>Japan</h2>
+            <div><img src="image/okinawa.jpg" style="width:80%"></div>
+          </div>
+          <div class="mainbutton">
+            <h2>Taiwan</h2>
+            <div><img src="image/okinawa.jpg" style="width:80%"></div>
+          </div>
+          <div class="mainbutton">
+            <h2>Eroupe</h2>
+            <div><img src="image/okinawa.jpg" style="width:80%"></div>
+          </div>
+        </div>
       </div>
 
+      
+
+
     </div>
-
-
-
-
-
   </section>
 
 
